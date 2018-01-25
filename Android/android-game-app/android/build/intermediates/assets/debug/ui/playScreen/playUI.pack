@@ -1,0 +1,47 @@
+
+playUI.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+health
+  rotate: false
+  xy: 1, 592
+  size: 749, 320
+  orig: 749, 320
+  offset: 0, 0
+  index: -1
+currency
+  rotate: false
+  xy: 1, 274
+  size: 508, 316
+  orig: 508, 316
+  offset: 0, 0
+  index: -1
+shieldBar
+  rotate: false
+  xy: 1, 188
+  size: 561, 84
+  orig: 561, 84
+  offset: 0, 0
+  index: -1
+healthBar
+  rotate: false
+  xy: 1, 103
+  size: 561, 83
+  orig: 561, 83
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 564, 190
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+knob
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

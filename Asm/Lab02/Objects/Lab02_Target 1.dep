@@ -1,0 +1,10 @@
+Dependencies for Project 'Lab02', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Lab02.s)(0x58ABD2EB)(--cpu Cortex-M0+ --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0plus\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "ARMCM0P SETA 1"--list .\listings\lab02.lst --xref -o .\objects\lab02.o --depend .\objects\lab02.d)
+F (RTE\Device\ARMCM0P\startup_ARMCM0plus.s)(0x58992A92)(--cpu Cortex-M0+ --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0plus\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "ARMCM0P SETA 1"--list .\listings\startup_armcm0plus.lst --xref -o .\objects\startup_armcm0plus.o --depend .\objects\startup_armcm0plus.d)
+F (RTE\Device\ARMCM0P\system_ARMCM0plus.c)(0x58992A92)(--c99 -c --cpu Cortex-M0+ -D__EVAL --li -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0plus\Include-D__UVISION_VERSION="523" -D_RTE_ -DARMCM0P-o .\objects\system_armcm0plus.o --omf_browse .\objects\system_armcm0plus.crf --depend .\objects\system_armcm0plus.d)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0plus\Include\ARMCM0plus.h)(0x58992A92)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm0plus.h)(0x58992A8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6E7B8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x58992A8A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x58992A8A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0plus\Include\system_ARMCM0plus.h)(0x58992A92)

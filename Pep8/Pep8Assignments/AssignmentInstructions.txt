@@ -1,0 +1,57 @@
+Script 1
+----------
+* Using the code from Script1.pep modify the code so that you have a subroutine
+* that inputs the data from the user and returns with the array filled.
+
+
+int values[10];
+
+int main(void) {
+	int index;
+	int total = 0;
+
+	load();
+	for (index = 0; index < 10; ++index) {
+		total += values[index];
+	}
+	cout << total << endl;
+}
+
+void load() {
+	int index;
+	for (index = 0; index < 10; ++index) {
+		cin >> values[index];
+	}
+}
+
+Script 2
+----------
+* Using the code Script 1 modify the code so that you have a subroutine that accepts a parameter 
+* that points to the array to be filled. The subroutine inputs the data from the user and returns with
+* the array filled. 
+* The main then calculates the sum of the array of values and displays the sum.
+
+int main(void) {
+    int index;
+    int values[10];
+    int total = 0;
+
+    load(values);
+    for (index = 0; index < 10; ++index) {
+        total += values[index];
+    }
+    cout << total << endl;
+}
+
+void load(int *values) {
+    int index;
+    for (index = 0; index < 10; ++index) {
+        cin >> values[index];
+    }
+}
+
+
+Script 3
+----------
+
+* Review Multiply.pep. Modify the multiply subroutine to do signed multiplication. Make sure you test with various combinations.

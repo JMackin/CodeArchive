@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+main()
+{
+float weight;
+printf ("Enter your exact weight in lbs\n");
+scanf ("%f", &weight);
+
+weight = weight * 0.453592;
+
+printf ("\nYour weight is %f in kgs\n", weight);
+
+}
+#include <stdio.h>
+main()
+{
+  int ft, in, cm;
+  printf ("Enter your height in feet and inches\n");
+  printf ("\nFeet: ");
+  scanf ("%d",&ft);
+  printf ("\nInches:");
+  scanf ("%d",&in);
+
+  cm = (ft * 30) + (in * 2);
+
+  printf ("\nYour height is %d in cm\n", cm);
+}
+#include <stdio.h>
+main()
+{
+int num;
+printf ("Enter an integer to be cubed:");
+scanf ("%d", &num);
+num = num * num * num;
+printf ("\nThat number cubed is %d\n", num);
+
+}
+#include <stdio.h>
+
+main()
+{
+long long age;
+printf ("Enter your age: ");
+scanf ("%lld", &age);
+age = (age * 365) * 86400;
+printf ("\nyour age is %lld in seconds\n", age);
+}
+#include <stdio.h>
+
+main()
+{
+  int pages, time;
+  printf ("\nEnter amount of pages to be printed:");
+  scanf("%d",&pages);
+  time = pages * 10;
+  printf ("\nIt will take %d seconds to print\n", time);
+}
+#include <stdio.h>
+
+main()
+{
+  int weight, water;
+  printf("Enter your weight in lbs: ");
+  scanf ("%d", &weight);
+  water = weight / 2;
+  printf ("\nYou should drink %d oz of water daily\n", water);
+}

@@ -1,0 +1,12 @@
+13:06:29 **** Build of configuration Debug for project test2 ****
+make all 
+Building file: ../src/test2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test2.d" -MT"src/test2.o" -o "src/test2.o" "../src/test2.cpp"
+Finished building: ../src/test2.cpp
+ 
+Building target: test2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "test2.exe"  ./src/test2.o   
+Finished building target: test2.exe
+ 

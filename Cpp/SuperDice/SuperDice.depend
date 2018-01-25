@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1509057559 source:e:\code\cpp\superdice\main.cpp
+	<iostream>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+

@@ -1,0 +1,129 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    2 00000000         
+    3 00000000                 EXPORT           __main
+    4 00000000         
+    5 00000000 20000004 
+                       a       EQU              0x20000004
+    6 00000000 20000008 
+                       b       EQU              0x20000008
+    7 00000000 2000000C 
+                       c       EQU              0x2000000C
+    8 00000000         
+    9 00000000         __main                               ; Lab 5 Program 1
+   10 00000000         
+   11 00000000 2005            MOVS             R0, #5
+   12 00000002 4F08            LDR              R7, =a
+   13 00000004 6038            STR              R0, [R7]    ; a = 5
+   14 00000006         
+   15 00000006 210A            MOVS             R1, #10
+   16 00000008 4F07            LDR              R7, =b
+   17 0000000A 6039            STR              R1, [R7]    ; b = 10
+   18 0000000C         
+   19 0000000C 4288            CMP              R0,R1       ; a <= b ?
+   20 0000000E D805            BHI              else1       ; break if a>b
+   21 00000010 4F06            LDR              R7, =c      ; load c
+   22 00000012 2303            MOVS             R3, #3      ; R3 equals 3
+   23 00000014 1842            ADDS             R2, R0, R1  ; c = a + b
+   24 00000016 1AD2            SUBS             R2, R2, R3  ; c = c - 3
+   25 00000018 603A            STR              R2, [R7]    ; store c
+   26 0000001A E002            B                done
+   27 0000001C         
+   28 0000001C         
+   29 0000001C         else1
+   30 0000001C 2201            MOVS             R2, #1      ; R2 equals 1
+   31 0000001E 4F03            LDR              R7, =c      ; load c
+   32 00000020 603A            STR              R2, [R7]    ; c = 1 and store
+   33 00000022         
+   34 00000022         
+   35 00000022         done
+   36 00000022 E7FE            B                done
+   37 00000024                 END
+              20000004 
+              20000008 
+              2000000C 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\lab05.d -o.\objects\lab05.o -I.\RTE\_Target_1 -IC:\Keil
+_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.
+1\Device\ARM\ARMCM0plus\Include --predefine="__EVAL SETA 1" --predefine="__UVIS
+ION_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="ARMCM0P SETA 1" -
+-list=.\listings\lab05.lst Lab05.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file Lab05.s
+   Uses
+      None
+Comment: .text unused
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 9 in file Lab05.s
+   Uses
+      At line 3 in file Lab05.s
+Comment: __main used once
+done 00000022
+
+Symbol: done
+   Definitions
+      At line 35 in file Lab05.s
+   Uses
+      At line 26 in file Lab05.s
+      At line 36 in file Lab05.s
+
+else1 0000001C
+
+Symbol: else1
+   Definitions
+      At line 29 in file Lab05.s
+   Uses
+      At line 20 in file Lab05.s
+Comment: else1 used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+a 20000004
+
+Symbol: a
+   Definitions
+      At line 5 in file Lab05.s
+   Uses
+      At line 12 in file Lab05.s
+Comment: a used once
+b 20000008
+
+Symbol: b
+   Definitions
+      At line 6 in file Lab05.s
+   Uses
+      At line 16 in file Lab05.s
+Comment: b used once
+c 2000000C
+
+Symbol: c
+   Definitions
+      At line 7 in file Lab05.s
+   Uses
+      At line 21 in file Lab05.s
+      At line 31 in file Lab05.s
+
+3 symbols
+343 symbols in table

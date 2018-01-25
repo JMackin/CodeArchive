@@ -1,0 +1,4 @@
+Project Log
+---------------------------------
+11/04: cloned git repository. Laid out game plan and app layout. -Jonn
+11/04: Added Initial AppDesign image. -Jonn

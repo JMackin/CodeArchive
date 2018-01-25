@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bank()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Bank\n
+comment1.params=account
+comment1.target=void\ addAccount(BankAccount)
+comment2.params=
+comment2.target=void\ printAccounts()
+comment3.params=
+comment3.target=void\ monthlyFee()
+numComments=4

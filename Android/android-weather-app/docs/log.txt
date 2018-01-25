@@ -1,0 +1,13 @@
+*******************************************************************
+BELOW AVERAGE WIZARDS ANDROID WEATHER APP DEVELOPMENT LOG
+*******************************************************************
+
+11/25: project created
+11/25: pushed a folder drawables with placeholder image for future use for icons, added log file in folder docs -Nick
+11/29: created framework for seven day forecast activity -Nick
+11/30: added weather icons in drawables folder, removed smug anime girl, worked on sevendayforecast layout, added temporary forecast button to
+ the main activity layout-Nick
+12/03: working on multitabbed specific weather, will push when basic layout works - Ed
+12/05: fixed null pointer error with seven day forecast, now displays the seven day weather icons, more to come -Nick
+12/06: finished sevendayforecast, will most likely refine a little later -Nick
+12/07: fixed forecast crashing on restart, edited fog png to be white -Nick

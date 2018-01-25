@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1505430242 source:e:\code\cpp\puzzlerduel\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

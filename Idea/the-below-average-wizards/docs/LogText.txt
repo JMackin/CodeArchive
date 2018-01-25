@@ -1,0 +1,27 @@
+Project Log
+---------------------------------
+11/04: cloned git repository. Laid out game plan and app layout. -Jonn
+11/04: Added Initial AppDesign image. -Jonn
+11/04: added game plan doc -jonn
+11/04: added skeletal TenDayForecast class and images folder with placeholder image (will be replaced with actual
+       weather icons later, probably) -nick
+11/04: Added ReceiveRadar class to get the radar images and RadarGUI to display them. Still needs work, but it's a
+       start. - Caitlyn
+11/05: Cleaned up some stuff in the repo. -Jonn
+11/06: Finished basic GetWeather code, has new methods and a main method to print out a test.  -Ed
+11/07: Added a method that gets the current weather icon to the GetWeather class. -Adam
+11/07: Updated ZipcodeGUI to use GetWeather instead of WeatherJSON. (Should we refactor the code to capitalize the
+       first letter of GetWeather?) -Adam
+11/07: Added ImageIcons to the GetWeather class. Might make the TenDayForecast class a LOT easier. (I hope it does.)
+11/08: Added ReceiveRadar code to the GetWeather class. Updated RadarGUI. -Caitlyn
+11/08: Changed getWeather to GetWeather because I noticed some files called it with a capital G and some without;
+       streamlined it through files according to usual Java format. Updated RadarGUI formatting. - Caitlyn
+
+11/08:  changed TenDayForecast to SevenDayForecast, I noticed that the assignment on Canvas wanted it for 7 days, and Ed's code reflected that.  Also began implementing methods in the GUI class (commented out currently because they threw null pointer exceptions when the getter methods were called), and changed the zipcode GUI class to have it call SevenDAyForecast, not TenDayForecast  -Nick
+11/09: updated getWeather.java to be GetWeather.java so naming conventions all fit.  also pushed an updated SevenDayForecast -Nick
+11/09: Updated RadarGUI format - Caitlyn
+11/09: updated SevenDayForecast, implemented navigation buttons. -Nick
+11/11: updated GetWeather to get month, weekday, and day of month. - Ed
+11/11: updated SevenDayForecast to include days, days, and labels for each, resized it to be smaller.  GUI is effectively finished.  -Nick
+11/14: CheckZip validates if a 5 digit zip is real, I still need to code exceptions for numbers that arent 5 digits or letters and implement CheckZip in GetWeather - Ed
+11/15: User is now prompted with an error message in a separate window if an invalid zip is entered. - Ed

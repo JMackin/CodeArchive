@@ -1,0 +1,64 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    2 00000000         
+    3 00000000                 EXPORT           __main
+    4 00000000         
+    5 00000000         __main
+    6 00000000         ;a + b - c
+    7 00000000         
+    8 00000000 2005            MOVS             R0, #5      ;a
+    9 00000002 2103            MOVS             R1, #3      ;b
+   10 00000004 2202            MOVS             R2, #2      ;c
+   11 00000006         
+   12 00000006 1840            ADDS             R0, R1      ;(a+b)
+   13 00000008 1A80            SUBS             R0, R2      ; (a+b)-c
+   14 0000000A         
+   15 0000000A         done
+   16 0000000A E7FE            B                done
+   17 0000000C         
+   18 0000000C         
+   19 0000000C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\lab02.d -o.\objects\lab02.o -I.\RTE\_Target_1 -IC:\Keil
+_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.
+1\Device\ARM\ARMCM0plus\Include --predefine="__EVAL SETA 1" --predefine="__UVIS
+ION_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="ARMCM0P SETA 1" -
+-list=.\listings\lab02.lst Lab02.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file Lab02.s
+   Uses
+      None
+Comment: .text unused
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 5 in file Lab02.s
+   Uses
+      At line 3 in file Lab02.s
+Comment: __main used once
+done 0000000A
+
+Symbol: done
+   Definitions
+      At line 15 in file Lab02.s
+   Uses
+      At line 16 in file Lab02.s
+Comment: done used once
+3 symbols
+337 symbols in table

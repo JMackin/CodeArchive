@@ -1,0 +1,24 @@
+
+#macros
+# define a macro LHS - RHS
+RELEASE_DIR = release
+CC = gcc
+
+calc:  main.o add.o minus.o multiply.o
+	$(CC) main.c -o $(RELEASE_DIR)/calc add.o minus.o multiply.o
+
+#TARGET:  Dependencies
+# How to compile 
+# OUR TARGETS ARE add, minus, multiply, clean, calc
+add.o:    add.c
+	$(CC) -c add.c
+
+
+minus.o:    minus.c
+	$(CC) -c minus.c
+
+multiply.o:                multiply.c
+	$(CC) -c multiply.c 
+
+clean: 
+	rm -f *.o $(RELEASE_DIR)/calc

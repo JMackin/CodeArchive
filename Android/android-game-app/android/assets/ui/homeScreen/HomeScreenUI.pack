@@ -1,0 +1,124 @@
+
+HomeScreenUI.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+shipFrame
+  rotate: false
+  xy: 1, 763
+  size: 557, 255
+  orig: 557, 255
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 1, 361
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+achievementUp
+  rotate: false
+  xy: 1, 103
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+exitUp
+  rotate: false
+  xy: 560, 763
+  size: 256, 255
+  orig: 256, 255
+  offset: 0, 0
+  index: -1
+playUp
+  rotate: false
+  xy: 403, 505
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+howtoUp
+  rotate: false
+  xy: 818, 763
+  size: 256, 255
+  orig: 256, 255
+  offset: 0, 0
+  index: -1
+settingsUp
+  rotate: false
+  xy: 661, 505
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+leaderUp
+  rotate: false
+  xy: 1076, 763
+  size: 256, 255
+  orig: 256, 255
+  offset: 0, 0
+  index: -1
+achievementDown
+  rotate: false
+  xy: 919, 505
+  size: 255, 256
+  orig: 255, 256
+  offset: 0, 0
+  index: -1
+storeUp
+  rotate: false
+  xy: 1334, 763
+  size: 256, 255
+  orig: 256, 255
+  offset: 0, 0
+  index: -1
+settingsDown
+  rotate: false
+  xy: 1176, 505
+  size: 255, 256
+  orig: 255, 256
+  offset: 0, 0
+  index: -1
+exitDown
+  rotate: false
+  xy: 1592, 763
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+howtoDown
+  rotate: false
+  xy: 1433, 506
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+leaderDown
+  rotate: false
+  xy: 1690, 506
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+playDown
+  rotate: false
+  xy: 259, 104
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+storeDown
+  rotate: false
+  xy: 516, 248
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+knob
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

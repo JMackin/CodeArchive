@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/melanos/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-352fd48648f2eebff17c7830893f54e4b244140f.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/classes-dc28cb5ea77ccd12fe940fcfa49c5d5765f05bbe.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/classes-d9ee73329d77bd3c881ef779683c5b7aa35279db.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/classes-1bdef89459f6193e83021adc9f9a1a1ee01f52d5.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/gson-2.2.4-6dedafda7b3efa31ea53ae1547723fece7bdd687.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/classes-cfa23ffbdaa19983590bce52e870dbe5116eb408.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/melanos/Meladrive/Code/Android/android-weather-app/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-b84d437e2739c1e8a9f42a215cf45653245d7398.jar" />
+    </item>
+
+</items>

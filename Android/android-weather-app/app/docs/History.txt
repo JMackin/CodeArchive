@@ -1,0 +1,2 @@
+11/28/15: New dependencies added. If this next pull does not compile, you must either close android studio pull, then reopen or
+	  Go to File > Project Structure > app > dependences > Press the Green + > add GSON Lib. Added basic GUI. Edited GetWeather to /* */ out the methods that cannot be used.

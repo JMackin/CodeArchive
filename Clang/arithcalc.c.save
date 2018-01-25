@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+main()
+{
+  int x,y,z;
+
+  do{
+    printf("Enter two numbers and an operation code..."\n);
+    printf(" 1: add, 2: subtract, 3: multiply, 4: divide, 0: quit\n");
+    scanf("%d",x);
+    scanf("%d",y);
+    scanf("%d",z);
+
+    case(z){
+      case 1:
+        printf(");
+        break;
+      case 2:
+        printf("Operation = %d", x + y);
+        break;
+      case 3:
+        printf("Operation = %d", x + y);
+        break;
+      case 0:
+        break;
+      default :
+        printf("Operation = %d", x + y);
+        break;
+    }
+
+  }while( z != 0);
+
+}

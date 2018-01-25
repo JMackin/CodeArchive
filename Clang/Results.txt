@@ -1,0 +1,8 @@
+BAA vs. ABC
+GAB vs. DAB
+EAB vs. CAB
+DBC vs. BAC
+GAA vs. FAB
+ABA vs. FAC
+BAB vs. FAA
+ABD vs. HAA

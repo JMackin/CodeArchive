@@ -1,0 +1,30 @@
+<!-- Basic body -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Headings and Paragraphs </title>	
+  </head>
+
+  <body>
+
+  	<h1>
+      <p> Some text to look at </p>
+    </h1>
+    <h3>
+      <p> Look some other text</p>
+    </h3>
+
+    <h2><p>Im</p></h2>
+	<h6><p>so</p></h6>
+	<h4><p>cool</p></h4>
+
+  </body>
+
+</html>
+
+
+-----------------------
+
+<!-- Embedding a link -->
+
+<a href="http://www.google.com">This link goes to google</a>

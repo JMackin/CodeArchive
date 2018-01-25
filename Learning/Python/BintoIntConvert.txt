@@ -1,0 +1,5 @@
+Int to Bin:
+{0:b}.format(56)
+
+Bin to Int:
+int('1010',2)

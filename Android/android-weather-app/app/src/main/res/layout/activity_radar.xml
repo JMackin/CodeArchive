@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="3"
+    android:weightSum="1"
+    android:background="#242627">
+    <View android:id="@+id/rectangle_at_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#242627"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+    </View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Radar"
+        android:id="@+id/textTitle"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:textSize="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textOutput"
+        android:layout_marginTop="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textTitle"
+        android:layout_alignStart="@+id/textTitle" />
+
+    <WebView
+        android:layout_width="300sp"
+        android:layout_height="475sp"
+        android:id="@+id/imageButton"
+        android:contentDescription="@string/Radar"
+        android:visibility="visible"
+        android:background="#242627"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

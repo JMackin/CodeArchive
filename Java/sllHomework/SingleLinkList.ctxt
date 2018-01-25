@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SingleLinkList()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ SingleLinkList\r\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\r\n\ Display\ linked\ list\r\n
+comment2.params=
+comment2.target=int\ size()
+comment2.text=\r\n\ Return\ size\ of\ linked\ list\r\n
+comment3.params=b
+comment3.target=void\ addBoxcarToEnd(Boxcar)
+comment3.text=\r\n\ Add\ boxcar\ to\ end\r\n
+comment4.params=b
+comment4.target=void\ addBoxcarToFront(Boxcar)
+comment4.text=\r\n\ Add\ boxcar\ to\ front\r\n
+comment5.params=
+comment5.target=void\ removeBoxcarFromFront()
+comment5.text=\r\n\ Remove\ boxcar\ from\ front\r\n
+comment6.params=
+comment6.target=void\ removeBoxcarFromEnd()
+comment6.text=\r\n\ Remove\ boxcar\ from\ end\r\n
+numComments=7

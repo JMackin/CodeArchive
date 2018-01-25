@@ -1,0 +1,56 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    2 00000000                 EXPORT           __main
+    3 00000000         
+    4 00000000         __main
+    5 00000000 200A            MOVS             R0,#10
+    6 00000002 2114            MOVS             R1,#20
+    7 00000004 4408            ADD              R0,R1
+    8 00000006         
+    9 00000006         done
+   10 00000006 E7FE            B                done
+   11 00000008                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\lab1.d -o.\objects\lab1.o -I.\RTE\_Target_1 -IC:\Keil_v
+5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\
+Device\ARM\ARMCM0plus\Include --predefine="__EVAL SETA 1" --predefine="__UVISIO
+N_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="ARMCM0P SETA 1" --l
+ist=.\listings\lab1.lst Lab1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file Lab1.s
+   Uses
+      None
+Comment: .text unused
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 4 in file Lab1.s
+   Uses
+      At line 2 in file Lab1.s
+Comment: __main used once
+done 00000006
+
+Symbol: done
+   Definitions
+      At line 9 in file Lab1.s
+   Uses
+      At line 10 in file Lab1.s
+Comment: done used once
+3 symbols
+337 symbols in table

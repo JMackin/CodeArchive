@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/darkgrey"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_seven_day_forecast"
+    tools:context="com.bawz.bawandroidapp.SevenDayForecast">
+
+       <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/textwhite"
+            android:gravity="center_horizontal"
+            android:text="Seven Day Forecast"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/weatherText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/weatherLabel"
+            android:textColor="@color/textwhite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="20dp"
+            android:paddingLeft="50dp"
+            android:layout_below="@id/text1" />
+
+        <TextView
+            android:id="@+id/highTempText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/highTempLabel"
+            android:textColor="@color/textwhite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="20dp"
+            android:layout_alignTop="@+id/weatherText"
+            android:layout_toEndOf="@id/weatherText" />
+
+        <TextView
+            android:id="@+id/lowTempText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/lowTempLabel"
+            android:textColor="@color/textwhite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="15dp"
+            android:layout_alignTop="@+id/highTempText"
+            android:layout_toEndOf="@+id/highTempText" />
+
+        <TextView
+            android:id="@+id/windText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/windLabel"
+            android:textColor="@color/textwhite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/lowTempText"
+            android:layout_toEndOf="@id/lowTempText"/>
+
+        <!-->ICONS</!-->
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day1"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/day1Label"
+            android:layout_below="@+id/weatherText"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day2"
+            android:layout_below="@+id/day1"
+            android:layout_alignStart="@+id/day1"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day3"
+            android:layout_below="@+id/day2"
+            android:layout_alignStart="@+id/day1"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day4"
+            android:layout_below="@+id/day3"
+            android:layout_alignStart="@+id/day1"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day5"
+            android:layout_below="@+id/day4"
+            android:layout_alignStart="@+id/day1"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day6"
+            android:layout_below="@+id/day5"
+            android:layout_alignStart="@+id/day1"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/day7"
+            android:layout_below="@+id/day6"
+            android:layout_alignStart="@+id/day1" />
+
+    <TextView
+        android:id="@+id/day1Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day2Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day3Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day4Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day5Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day6Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/day7Label"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:layout_alignTop="@+id/day7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/highTemp1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day1"
+        android:layout_alignStart="@+id/highTempText" />
+
+    <TextView
+        android:id="@+id/highTemp2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day2"
+        android:layout_alignStart="@+id/highTemp1" />
+
+    <TextView
+        android:id="@+id/highTemp3"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day3"
+        android:layout_alignStart="@+id/highTemp2" />
+
+    <TextView
+        android:id="@+id/highTemp4"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day4"
+        android:layout_alignStart="@+id/highTemp3" />
+
+    <TextView
+        android:id="@+id/highTemp5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day5"
+        android:layout_alignStart="@+id/highTemp4" />
+
+    <TextView
+        android:id="@+id/highTemp6"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day6"
+        android:layout_alignStart="@+id/highTemp5" />
+
+    <TextView
+        android:id="@+id/highTemp7"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day7"
+        android:layout_alignStart="@+id/highTemp6" />
+
+    <TextView
+        android:id="@+id/Date1Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day1Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date2Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day2Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date3Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day3Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date4Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day4Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date5Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day5Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date6Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day6Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Date7Label"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="12/6"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/day7Label"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lowTemp1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day1"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day2"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp3"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day3"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp4"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day4"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day5"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp6"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day6"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/lowTemp7"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day7"
+        android:layout_alignStart="@+id/lowTempText" />
+
+    <TextView
+        android:id="@+id/wind1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day1"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day2"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind3"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day3"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind4"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day4"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day5"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind6"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day6"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/wind7"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tue"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/day7"
+        android:layout_alignStart="@+id/windText" />
+
+    <TextView
+        android:id="@+id/mphLabel"
+        android:textStyle="bold"
+        android:textSize="9dp"
+        android:text="(mph)"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textwhite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/windText"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+<!-- From: file:/home/melanos/Meladrive/Code/Android/android-weather-app/app/src/main/res/layout/content_seven_day_forecast.xml -->

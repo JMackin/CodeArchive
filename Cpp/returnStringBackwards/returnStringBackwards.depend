@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1506201867 source:e:\code\cpp\returnstringbackwards\main.cpp
+	<iostream>
+	<cstring>
+

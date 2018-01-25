@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyStack()
+comment1.params=data
+comment1.target=void\ push(java.lang.Object)
+comment2.params=
+comment2.target=java.lang.Object\ pop()
+comment3.params=
+comment3.target=java.lang.Object\ peek()
+comment4.params=
+comment4.target=int\ size()
+comment5.params=
+comment5.target=void\ clear()
+comment6.params=
+comment6.target=boolean\ is_empty()
+numComments=7

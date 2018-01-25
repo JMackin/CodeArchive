@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=userURL
+comment0.target=Bitly(java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getShortURL()
+comment2.params=
+comment2.target=java.lang.String\ getHash()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

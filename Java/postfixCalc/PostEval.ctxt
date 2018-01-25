@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PostEval()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ PostEval\r\n
+comment1.params=postfix
+comment1.target=java.lang.String\ evaluate(java.lang.String)
+comment2.params=c
+comment2.target=boolean\ isOperator(java.lang.String)
+comment3.params=c\ x\ y
+comment3.target=double\ operate(java.lang.String,\ double,\ double)
+numComments=4

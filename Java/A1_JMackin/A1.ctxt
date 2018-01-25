@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=A1()
+comment1.params=value
+comment1.target=void\ add(java.lang.String)
+comment1.text=\n\ add\ -\ add\ element\ to\ array\n
+comment2.params=
+comment2.target=void\ print()
+comment2.text=\n\ print\ -\ display\ contents\ of\ the\ array\n
+comment3.params=index
+comment3.target=java.lang.String\ get(int)
+comment3.text=\n\ get\ -\ return\ a\ string\ element\ given\ an\ index\n
+comment4.params=insert\ index
+comment4.target=void\ set(java.lang.String,\ int)
+comment4.text=\n\ set\ -\ insert\ a\ given\ string\ element\ at\ a\ given\ index\n
+comment5.params=
+comment5.target=void\ clear()
+comment5.text=\n\ clear\ -\ sets\ all\ array\ elements\ to\ null\n
+comment6.params=
+comment6.target=int\ size()
+comment6.text=\n\ size\ -\ returns\ an\ integer\ that\ is\ the\ count\ of\ non-null\ elements\ in\ array\n
+numComments=7

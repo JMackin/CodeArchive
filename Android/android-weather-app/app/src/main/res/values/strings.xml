@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BAW Weather App</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_seven_day_forecast">Seven Day Forecast</string>
+    <string name="spacer"> </string>
+    <string name="weatherLabel">Weather</string>
+    <string name="highTempLabel">High</string>
+    <string name="lowTempLabel">Low</string>
+    <string name="windLabel">Wind</string>
+    <string name="title_activity_specific_weather">SpecificWeather</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Radar">Radar</string>
+    <string name="RADAR">RADAR</string>
+</resources>

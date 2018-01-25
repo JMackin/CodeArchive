@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/melanos/Code/Android/android-game-app/android/libs/tween-engine-api.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8be8beb70b7ccae059d523e56670f6e44fb1821f">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/tween-engine-api-df2243c1d8632dd1e006716ea275e369bfa9ff0f.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.7.1/2179cc613447c297623a4a6d2ba6692c3aaff804/gdx-1.7.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2179cc613447c297623a4a6d2ba6692c3aaff804">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/gdx-1.7.1-a8d11f145f95563bea2db09da9d95f6b53c91e96.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Code/Android/android-game-app/android/libs/tween-engine-api-sources.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b471c161e1bd73eb4a762a35d75b40eb5b4de3a1">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/tween-engine-api-sources-0b2c74e62bd031681dc0302d5a12cdcb00fb3bb3.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-bullet/1.7.1/294b0b585e3bb2ca20b0b6218a158c4e0115243b/gdx-bullet-1.7.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="294b0b585e3bb2ca20b0b6218a158c4e0115243b">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/gdx-bullet-1.7.1-a2aabfbd05df57841e7f63b7b7e76aa71247795e.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.7.1/af361631aeda42eab0f9fc83e5f48a93df459766/gdx-freetype-1.7.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="af361631aeda42eab0f9fc83e5f48a93df459766">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/gdx-freetype-1.7.1-74004be4aedcb099b4307e8bf17c983f1152010e.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.7.1/fd23897393900f8f888222795e3229eff600fb3d/gdx-box2d-1.7.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fd23897393900f8f888222795e3229eff600fb3d">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/gdx-box2d-1.7.1-777ee23ce6558fe638f3ef9a2c44e176cbca74ac.jar" />
+    </item>
+    <item
+        jar="/home/melanos/Code/Android/android-game-app/core/build/libs/core-1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="552b241b2db1e23b861d3170b3d170d970e8498a">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/core-1.0-e68f6a259b7792ae027bdc74279664ef55fb0c16.jar" />
+    </item>
+    <item
+        jar="/home/melanos/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.7.1/454871d4783564f17959bf9247660e7f56ecc4ab/gdx-backend-android-1.7.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="454871d4783564f17959bf9247660e7f56ecc4ab">
+        <dex dex="/home/melanos/Code/Android/android-game-app/android/build/intermediates/pre-dexed/debug/gdx-backend-android-1.7.1-86043ea754317ccd79183bbb7cddcc8c9c3bc3e5.jar" />
+    </item>
+
+</items>

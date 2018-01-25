@@ -1,0 +1,354 @@
+#include <stdio.h>
+
+main()
+{
+  int x, y;
+  printf("Enter number to determine if it's even or odd\n");
+  printf("Enter 0 to quit\n");
+
+  while (x != 0){
+    scanf("%d",&x);
+    if ( (x % 2 == 0) && (x != 0) ){
+      printf("The number you entered is even\n");
+      printf("Enter a number\n");
+    }else if (x % 2 != 0) {
+      printf("The number you entered is odd\n");
+      printf("Enter a number\n");
+    }else if ( x == 0){
+      printf("Bye");
+    }
+  }
+}
+
+//----END of PROGRAM 1 ---------------
+
+ 
+
+//----PROGRAM 2 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  float weight, height, index;
+
+  printf("Enter your body weight in lbs: ");
+  scanf("%f", &weight);
+  printf("Enter your height in inches: ");
+  scanf("%f", &height);
+
+  index = (weight * 703) / (height * height);
+  printf("Your BMI is: %f\n", index);
+
+  if (index < 18.5){
+    printf("You are underwight\n");
+  }else if ((index >= 18.5) && (index <= 24.9)){
+    printf("You are normal\n");
+  }else if ((index >= 25) && (index <= 29.9)){
+    printf("You are overweight\n");
+  }else{
+    printf("you are obese\n");
+  }
+
+}
+
+
+//----END of PROGRAM 2 ---------------
+
+ 
+
+//----PROGRAM 3 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  int x;
+  int max = 0;
+  printf("Please enter a number: ");
+
+  while(x != 0){
+    scanf("%d", &x);
+  if (x > max){
+    max = x;
+  }
+  printf("Current max is %d\n", max);
+  printf("Enter another number or 0 to quit\n");
+  }
+
+}
+
+
+//----END of PROGRAM 3 ---------------
+
+ 
+
+//----PROGRAM 4 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  float l;
+  int g;
+
+  while (g != 0) {
+    printf("Please enter number of gallons or 0 to quit:\n");
+    scanf("%d",&g);
+    if (g != 0){
+      l = g * 3.78541;
+      printf("%d gallons is %f liters\n", g, l);
+    }else{
+      printf("bye\n");
+    }
+  }
+}
+
+
+//----END of PROGRAM 4 ---------------
+
+ 
+
+//----PROGRAM 5 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  int x,y;
+  srand(time(NULL));
+  printf("Do you want to play? Enter 1 for yes, or any other number to quit...\n");
+  scanf("%d",&x);
+  if (x == 1){
+    while ( x== 1){
+      printf("Enter a number between 1 and 999\n");
+      scanf("%d",&x);
+      y = rand() % 1000 ;
+      if (x != y){
+        printf("You entered:%d Computer picked:%d\n",x,y);
+        printf("Do you want to play? Enter 1 for yes, or any other number to quit...\n");
+        scanf("%d",&x);
+      }else{
+        printf("You win! You entered:%d Computer picked:%d\n",x,y);
+      }//end if-else
+    }//end while
+  }//end if
+}
+
+
+//----END of PROGRAM 5 ---------------
+
+ 
+
+//----PROGRAM 6 : Program Statement
+
+#include <stdio.h>
+main()
+{
+  int x,i;
+  int y = 1;
+  printf("Enter a number:\n");
+  scanf("%d",&x);
+  if ( x % 2 != 0){
+    for(i = x-1; i > 2; i--){
+      if( x % i == 0){
+        y = 0;
+      }
+    }
+  }else{
+    y = 0;
+  }
+  if (y == 1){
+    printf("Entered number is prime\n");
+  }else{
+    printf("Entered number is not prime\n");
+  }
+}
+
+
+//----END of PROGRAM 6 ---------------
+
+ 
+
+//----PROGRAM 7 : Program Statement
+
+#include <stdio.h>
+main()
+{
+  int x,i,j,y;
+  int z = 0;
+  printf("Enter a number:\n");
+  scanf("%d",&x);
+  for (j = x -1; j > 0; j--){
+  if ( j % 2 != 0){
+    for(i = j-1; i > 2; i--){
+      if( j % i == 0){
+        y = 0;
+      }
+      else{
+        y = 1;
+      }
+    }
+  }else{
+    y = 0;
+  }
+  if (y == 1){
+    z += j;
+  }
+  }
+  printf("sum of all prime numbers below %d is %d\n",x,z);
+}
+
+
+//----END of PROGRAM 7 ---------------
+
+ 
+
+//----PROGRAM 8 : Program Statement
+
+#include <stdio.h>
+#include <math.h>
+main()
+{
+  double x;
+  printf("Enter a number of type float\n");
+  scanf("%lf",&x);
+  printf("Floor:%f\n",floor(x));
+  printf("Ceiling:%f\n",ceil(x));
+}
+
+
+//----END of PROGRAM 8 ---------------
+
+ 
+
+//----PROGRAM 9 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  int x, y = 0;
+  printf("Enter a number to be reversed\n");
+  scanf("%d",&x);
+  while (x != 0){
+    y = y * 10;
+    y = y + x % 10;
+    x = x / 10;
+  }
+  printf("the number in reverse is %d\n", y);
+}
+
+
+//----END of PROGRAM 9 ---------------
+
+ 
+
+//----PROGRAM 10 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  int x,y,z;
+
+  do{
+    printf("Enter two numbers and a code for an operation to be performed\n");
+    printf("1: addition, 2: subtraction, 3: multiplication, 4: division, 0: quit\n");
+    scanf("%d",&x);
+    scanf("%d",&y);
+    scanf("%d",&z);
+
+    switch(z){
+
+      case 1:
+      printf("Operation =%d\n", x + y);
+      break;
+
+      case 2:
+      if( x > y ){
+        printf("Operation =%d\n",x - y);
+      }else{
+        printf("Operation =%d\n",y - x);
+      }
+      break;
+
+      case 3:
+      printf("Operation =%d\n", x * y);
+      break;
+
+      case 4:
+      if ( y == 0){
+        printf("Divide by zero error");
+        break;
+      }
+      printf("Operation =%d\n",x / y);
+      break;
+
+      case 0:
+      break;
+
+      default:
+      printf("INVALID\n");
+      break;
+
+    }
+
+  }while (z !=0);
+
+}
+
+
+//----END of PROGRAM 10 ---------------
+
+ 
+
+//----PROGRAM 11 : Program Statement
+
+#include <stdio.h>
+
+main()
+{
+  float y, balance = 100.0;
+  int x;
+
+  do{
+  printf("1 for withdraw\n2 for deposit\n3 to print balance\n4 to quit\n>");
+  scanf("%d", &x);
+
+  switch(x){
+
+    case 1:
+      printf("Enter amount to withdraw\n>");
+      scanf("%f",&y);
+      if( y > balance) { printf("Insufficient funds\n"); break; }
+      balance = balance - y;
+      printf("New Balance: $%f\n", balance);
+      break;
+    break;
+
+    case 2:
+    printf("Enter amount to deposit\n>");
+    scanf("%f",&y);
+    balance = balance + y;
+    printf("New Balance: $%f\n", balance);
+    break;
+
+    case 3:
+    printf("Current Balance: $%f\n", balance);
+    break;
+
+    case 4:
+    break;
+
+    default:
+    printf("Invalid option\n");
+    break;
+  }
+  }while(x != 4);
+
+}
+
+
+//----END of PROGRAM 11 ---------------
+

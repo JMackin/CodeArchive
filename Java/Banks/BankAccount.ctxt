@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=o\ a
+comment0.target=BankAccount(java.lang.String,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BankAccount\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ toString\ -\ display\ bank\ account\ information\ as\ a\ string\n\n
+comment2.params=amount
+comment2.target=void\ adjust(double)
+comment2.text=\n\ adjust\ -\ adjust\ the\ balance\ of\ an\ account\n\ \n
+numComments=3

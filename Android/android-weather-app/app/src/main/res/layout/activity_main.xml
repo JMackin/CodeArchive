@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="3"
+    android:weightSum="1"
+    android:id="@+id/tortea">
+
+
+    <View android:id="@+id/rectange_at_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#313236"
+        android:visibility="visible"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentBottom="true">
+
+    </View>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:textSize="44dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#6caeff"
+        android:shadowColor="#6caeff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:gravity="center"
+        android:layout_below="@+id/textTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WIZARD"
+        android:id="@+id/textTitle"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:shadowRadius="25"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zipCode"
+        android:text="Zip Code"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#6caeff"
+        android:layout_below="@+id/textClock"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/temperatureOut"
+        android:numeric="integer"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:id="@+id/zipButton"
+        android:ellipsize="start"
+        android:textSize="7dp"
+        android:layout_alignTop="@+id/zipCode"
+        android:layout_alignParentEnd="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast"
+        android:id="@+id/sevenDayButton"
+        android:ellipsize="start"
+        android:textSize="12dp"
+        android:onClick="startForecast"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/temperatureIcon"
+        android:src="@drawable/temperature"
+        android:layout_below="@+id/zipCode"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/temperatureOut"
+        android:layout_below="@+id/zipButton"
+        android:layout_toStartOf="@+id/zipButton"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/currentConditions"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/unknown"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/conditionsText"
+        android:layout_below="@+id/currentConditions"
+        android:layout_alignStart="@+id/currentConditions"
+        android:layout_alignEnd="@+id/currentConditions"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/compass"
+        android:layout_below="@+id/conditionsText"
+        android:layout_alignStart="@+id/conditionsText"
+        android:src="@drawable/comp"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/arrowIcon"
+        android:src="@drawable/arrow"
+        android:layout_below="@+id/conditionsText"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherDirection"
+        android:layout_below="@+id/compass"
+        android:layout_alignStart="@+id/compass"
+        android:layout_alignEnd="@+id/compass"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RADAR"
+        android:id="@+id/radarButton"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/sevenDayButton"
+        android:layout_alignStart="@+id/temperatureIcon"
+        android:onClick="startRadar"/>
+
+    <TextView
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/cityOut"
+        android:layout_below="@+id/temperatureIcon"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/radarButton"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

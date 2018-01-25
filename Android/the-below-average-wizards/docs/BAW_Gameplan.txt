@@ -1,0 +1,56 @@
+The below average wizards
+
+Weather app
+
+Repo: https://Username@bitbucket.org/areed7/the-below-average-wizards.git
+
+* Current conditions
+* & day Forecast
+* current radar image
+
+Edward: assemble and organize json data, isolate the proper data calls from wunderground for weather data, write code thatll be implemented in the methods to actually get the data. Responsible for the api key. Write main methods and layout code.
+
+Nick: write the methods for calling and parseing the json data for weather forecast, and a nice gui  to display it.
+
+Caitlyn: work on a method to parse the json data for the radar image, and a gui function to display the image in a nice fashion. 
+
+Adam: Handle updates and repo management, handle information flow between the members. Stitch together everyones code, and debug. Do home screen gui..
+
+11/04 status
+----------------
+* Repository and communication channels established.
+* team duties assigned and initiated
+* mock up created, design laid out
+* programming started
+* nick figured out image capabilitie
+
+11/05 status
+----------------
+* The team has cranked out a lot of good code
+* a gui classs for the Radar, Forecast, and home screen.
+* support class for radar class also written.
+* a class that appears to auto detect region by IP adress was also added.
+* Project at this point is an executable whole, but im hoping we can meet up and get it sown together
+
+11/07 status
+----------------
+* looks like everyone has been pretty busy coding away the classes are really starting to mature.
+* methods to handel the image icons has pretty much been wrapped up.
+* backend has finished the main code to handle json data and divie it up etween the different gui classes.
+* I it's still kind of in parts but i think it wont be hard to put it together in to something that'll run for mondays presentation.
+* because of conflicting schedules it's looking unlikely that we'll e meeting up tommorrow, but i'm still confident we can get it done.
+
+11/08 status
+----------------
+* All of the guis are pretty far along callale from the main gui.
+* radar map has a couple bugs. forecast class tweaks still being worked on.
+* Got everyone syncronized and the classes working in tandem
+* Getting closer to finished, looks like we just need to work on some tweaks.
+* Plan on adding some superficial stuff later on.
+* 
+
+Ideas
+----------------
+* Caitlyn proposed adding a menu to switch between Radar views in the Radar panel
+* Nick proposed buttons to switch between panels via navigation buttons
+* json potentially eing handled in a new way.

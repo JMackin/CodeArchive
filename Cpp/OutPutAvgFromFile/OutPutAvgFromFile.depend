@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1506199238 source:e:\code\cpp\outputavgfromfile\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

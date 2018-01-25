@@ -1,0 +1,20 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    startup_armcm0plus.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm0plus.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm0plus.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm0plus.o(RESET) refers to startup_armcm0plus.o(STACK) for __initial_sp
+    startup_armcm0plus.o(RESET) refers to startup_armcm0plus.o(.text) for Reset_Handler
+    startup_armcm0plus.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm0plus.o(.text) refers to system_armcm0plus.o(i.SystemInit) for SystemInit
+    startup_armcm0plus.o(.text) refers to lab05.o(.text) for __main
+    startup_armcm0plus.o(.text) refers to lab05_2.o(.text) for __main
+    startup_armcm0plus.o(.text) refers to startup_armcm0plus.o(HEAP) for Heap_Mem
+    startup_armcm0plus.o(.text) refers to startup_armcm0plus.o(STACK) for Stack_Mem
+    system_armcm0plus.o(i.SystemCoreClockUpdate) refers to system_armcm0plus.o(.data) for SystemCoreClock
+    system_armcm0plus.o(i.SystemInit) refers to system_armcm0plus.o(.data) for SystemCoreClock
+
