@@ -1,6 +1,6 @@
-# CS232-03-___.py
-# Name:
-# Last Modified:
+# CS232-03-jlm1455.py
+# Name: John Mackin
+# Last Modified: 03/28/18
 
 # Adapted from MIT 6.189, MIT Open Courseware
 # Used by permission of Creative Commons license
@@ -190,12 +190,13 @@ def word_guessed():
     global secret_word
     global letters_guessed
 
-    for i in letters_guessed:
-        if i not in secret_word:
+    for i in secret_word:
+        if i not in letters_guessed:
             return False
-    
+
     return True
-    
+
+
 
     
 
@@ -224,7 +225,13 @@ def print_guessed():
         else:
             guessed_string += "_ "
 
-    return guessed_string
+    guessed_string += '\n\nLetters Guessed: '
+
+    for i in letters_guessed:
+        guessed_string += i + ' '
+
+    print(guessed_string)
+    
 
 
 # play_hangman: void -> void
@@ -261,11 +268,56 @@ def play_hangman():
     # function works, un-comment the line below to let the
     # computer select a word at random.
 
-    # secret_word  = get_word()
+    secret_word  = get_word()
 
     ####### YOUR CODE HERE ######
+
+    print("Enter 'xx' to exit game\n")
+
+    while(True):
+
+      print_hangman_image(wrong_guesses)
+      print_guessed()
+
+      usrin = input("> ")
+
+      if (usrin == 'xx'):
+          break
+      elif (usrin in letters_guessed):
+          print("\nLetter already guessed")
+      else:
+          if (len(usrin) == 1):
+              letters_guessed.append(usrin)
+              
+              if (usrin not in secret_word):
+                  wrong_guesses += 1
+
+          else:
+              print("Enter only a single letter")
+
+      if (wrong_guesses >= 6):
+          print_hangman_image(wrong_guesses) 
+          print("\nYou Lose!\nThe word was: ", secret_word)
+          usrin = input("\nPlay again? (y/n)> ")
+          if(usrin == 'n'):
+              break
+          else:
+              secret_word  = get_word()
+              letters_guessed = []
+              wrong_guesses = 0
+
+      elif(word_guessed()):
+          print("Congrats, you win!")
+          usrin = input("\nPlay again? (y/n)> ")
+          if(usrin == 'n'):
+              break
+          else:
+              secret_word  = get_word()
+              letters_guessed = []
+              wrong_guesses = 0
 
     # Leave this return line as is
     return None
 
     
+play_hangman()
