@@ -1,0 +1,8 @@
+public class CookeryFan
+{
+  
+  private String fname, lname, idNum, emailaddr, year;
+  private boolean subscribed;
+  
+  
+}
